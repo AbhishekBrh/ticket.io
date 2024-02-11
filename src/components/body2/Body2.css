@@ -1,0 +1,89 @@
+.body2{
+    margin-left: 93px;
+    margin-top: 70px;
+}
+.container p{
+    color: gray;
+}
+.container2{
+    border: 2px solid black;
+    width: 60%;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.container2 i{
+    margin-right: 6px;
+}
+.container2 .container3 i{
+    padding: 0px 5px;
+}
+.container2 .container4 {
+    margin: 40px 0px;
+}
+.container2 .container4 input{
+    padding: 12px 60px;
+    margin: 10px 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+} 
+.container2 .container5{
+    margin-top: 50px;
+}
+.container2 .container5 p i{
+   margin-left: 10px;
+}
+.container2 .container5 p{ 
+    color: gray;
+    margin-bottom: 40px;
+}
+.container2 .container5 button{
+    margin-top: 30px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.pay{
+    margin-top: 30px;
+    width: 65%;
+}
+.pay .pay1{
+    border: 1px solid gray;
+    padding: 20px 40px;
+    margin: 10px 40px;
+    border-radius: 10px;
+}
+.pay .pay1 label{
+    padding: 0px 20px;
+}
+.pay .pay1 input{
+    margin-left: 280px;
+}
+hr{
+    margin-top: 40px;
+    width: 70%;
+}
+.container6{
+    margin-top: 40px;
+    width: 65%;
+}
+.container6 .box{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px 40px;
+}
+.container6 .box h5 i{
+    padding: 10px;
+}
+@media screen and (max-width: 600px) {
+    .body2 {
+        margin-left: 93px;
+        margin-top: 70px;
+        width: 233%;
+    }
+    .container2 .container5 span{
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,214 @@
+/* .body1{
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px;
+} */
+.body1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  padding: 0 20px;
+}
+.body1 .body-left {
+  flex: 0.7;
+}
+.body1 .body-right {
+  flex: 0.3;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+/* left */
+.body1 .body-left .text {
+  border: 2px solid grey;
+  margin-right: 50px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  color: grey;
+}
+.body1 .body-left .text h3 {
+  display: flex;
+  align-items: row;
+  justify-content: space-between;
+}
+.body1 .body-left .text2,
+.text3 {
+  width: 92%;
+}
+.body1 .body-left .text2 .details1 {
+  margin-top: 60px;
+}
+.body1 .body-left .text2 .details1 p {
+  color: grey;
+}
+.body1 .body-left .text2 form .form-group .fr {
+  width: 100%;
+  padding: 12px 9px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid grey;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body1 .body-left .text2 form .form-group .form-grp1 {
+  display: flex;
+  margin-bottom: 10px;
+}
+.body1 .body-left .text2 form .form-group .form-grp1 #options {
+  padding: 12px 95px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  margin-right: 80px;
+}
+.body1 .body-left .text2 form .form-group .form-grp1 input {
+  padding: 12px 70px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.body1 .body-left .text2 form .form-group .form-grp1 .email {
+  margin-right: 75px;
+}
+.body1 .body-left .text2 hr {
+  border-width: 2px;
+}
+.body1 .body-left .text3 {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+}
+.body1 .body-left .text3 .details2 .form-grp1 #options {
+  padding: 12px 95px;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+.body1 .body-left .text3 .details2 .form-grp1 input {
+  padding: 12px 70px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-right: 75px;
+}
+.body1 .body-left .text3 .details2 .form-grp1 #options2 {
+  width: 100%;
+  padding: 12px 0;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+/* right */
+.body-right .pic img {
+  width: 250px;
+  padding: 10px 30px;
+}
+.body-right .r-details {
+  margin-left: 18px;
+}
+.body-right .r-details i,
+b,
+span {
+  padding: 0px 3px;
+}
+.body-right .a-details {
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body-right .a-details i {
+  padding: 10px 0px;
+}
+.body-right .a-details hr {
+  width: 80%;
+}
+.body-right .details {
+  padding: 10px 37px;
+}
+.body-right .details summary {
+  font-weight: bold;
+  color: gray;
+}
+.body-right .details2 {
+  padding: 10px 37px;
+}
+.body-right .details2 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.body-right .details2 > button {
+  padding: 6px 10px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: rgb(183, 227, 213);
+}
+.body-right .details2 > button i {
+  margin-right: 8px;
+  color: rgb(19, 56, 44);
+}
+.body-right .details2 > h6 {
+  color: gray;
+}
+.body-right .details2 > h6 i {
+  margin-left: 9px;
+}
+.body-right .details2 .btn {
+  margin-top: 30px;
+  padding: 20px 40px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.body-right .details2 .fa-solid {
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .body1 {
+    flex-direction: column; /* Stack items vertically */
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+
+  .body1 .body-left,
+  .body1 .body-right {
+    flex: 1; /* Make both items take full width */
+    margin-bottom: 10px; /* Add space between items */
+  }
+
+  .body1 .body-left {
+    order: 2; /* Specify the order of .body-left to be first */
+  }
+
+  .body1 .body-right {
+    order: 1; /* Specify the order of .body-right to be second */
+  }
+  .navb nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 101px;
+    color: grey;
+    width: 124%;
+  }
+  .navb .hr-line {
+    background-color: black;
+    color: white;
+    width: 192%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .body1 .body-left, .body1 .body-right {
+    flex: 1 1;
+    margin-bottom: 10px;
+    padding: 10px 104px;
+    margin-left: 394px;
+}
+}

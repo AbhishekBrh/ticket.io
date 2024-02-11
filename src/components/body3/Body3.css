@@ -1,0 +1,52 @@
+.body3{
+    display: flex;
+    width: 80%;
+    margin: 50px 90px;
+}
+.body3-left{
+    flex: 0.3;
+}
+.body3-right{
+    flex: 0.7;
+    padding: 10px 80px;
+}
+.body3-right .details details{
+    border: 1px solid gray;
+    padding: 10px 70px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+.body3-right .details details summary{
+    font-weight: bold;
+}
+.body3-left img {
+    width: 413px; 
+}
+summary::before {
+    content: '+';
+    margin-right: 0.5em; 
+  }
+  
+  details[open] summary::before {
+    content: 'x';
+  }
+  @media screen and (max-width: 600px){
+    .body3 {
+        display: flex;
+        width: 80%;
+        margin: 50px 90px;
+        flex-direction: column;
+    }
+    .body3-left img {
+        width: 545px;
+        margin-left: 75px;
+    }
+    .body3-right .details details {
+        border: 1px solid gray;
+        padding: 17px 46px;
+        margin: 10px 0px;
+        border-radius: 10px;
+        width: 205%;
+    }
+  }
+  
